@@ -1,7 +1,7 @@
 $direction: (l left, r right, t top, b bottom);
 @for $i from 1 through 30 {
   @each $type in m, p, v, h, a{
-    
+
     @if $type == m {
       @each $d in $direction{
         [m#{nth($d, 1)}#{$i}] {
@@ -35,11 +35,20 @@ $direction: (l left, r right, t top, b bottom);
         padding-top: #{$i}px;
         padding-bottom: #{$i}px;
       }
+
+      [mv#{$i}] {
+        margin-top: #{$i}px;
+        margin-bottom: #{$i}px;
+      }
     }
 
     @else {
       [pa#{$i}] {
         padding: #{$i}px;
+      }
+
+      [ma#{$i}] {
+        margin: #{$i}px;
       }
     }
   }
