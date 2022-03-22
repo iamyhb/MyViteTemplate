@@ -9,6 +9,7 @@
     <c-col span="8">3333</c-col>
   </c-row>
   <c-layout></c-layout>
+  <c-box-center style="width: 200px; height: 200px">123</c-box-center>
 </template>
 
 <script setup lang="ts">
