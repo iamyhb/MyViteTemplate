@@ -118,7 +118,7 @@ const init = () => {
 
   const initCamera = () => {
     camera = new THREE.PerspectiveCamera(45, rootRef.value!.clientWidth / rootRef.value!.clientHeight, 1, 5000)
-    camera.position.set(22, 10, -13)
+    camera.position.set(22, 11, -13)
   }
 
   const initOrbitControls = () => {
