@@ -5,20 +5,12 @@ import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [vue(), eslintPlugin({ cache: false })],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
     }
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `
-        @import "@/style/gobal.scss";
-        @import "@/style/settings/var.scss";
-        `
-      }
-    }
-  }
+  assetsInclude: ['**/*.fbx', '**/*.hdr']
 })

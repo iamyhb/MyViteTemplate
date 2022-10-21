@@ -3,13 +3,13 @@ import { createRouter, createWebHashHistory, Router, RouteRecordRaw } from 'vue-
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'home',
-    component: () => import('@/components/MyHome.vue')
+    name: 'TunnelModelDisplay',
+    component: () => import('@/components/TunnelModelDisplay.vue')
   },
   {
-    path: '/about',
-    name: 'about',
-    component: () => import('@/components/MyAbout.vue')
+    path: '/TunnelEntranceModelDisplay',
+    name: 'TunnelEntranceModelDisplay',
+    component: () => import('@/components/TunnelEntranceModelDisplay.vue')
   }
 ]
 
